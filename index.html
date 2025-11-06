@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roja Restaurant</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+  
+</head>
+<body>
+
+  <!-- 🔹 Navbar -->
+  <nav class="navbar navbar-expand-lg  sticky-top" style="background-color: rgb(224, 216, 227);">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.png" alt="Roja Restaurant" width="50" class="me-2">
+        Roja Restaurant
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pay Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <header class="bg-warning text-dark text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Welcome to Roja Restaurant</h1>
+      <p class="lead">Delicious food, warm ambiance, unforgettable taste</p>
+      <a href="menu.html" class="btn btn-dark btn-lg">See Menu</a>
+
+    </div>
+  </header>
+
+  <!-- 🔹 Bootstrap Carousel (Slider) -->
+  <div id="foodCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/german-food-rouladen.jpg" class="d-block w-100" alt="Menu">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Junk-food.jpg" class="d-block w-100" alt="Junk Food">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pakistani-food-biryani.jpg" class="d-block w-100" alt="Biryani">
+      </div>
+      <div class="carousel-item">
+        <img src="images/german-food-rouladen.jpg" class="d-block w-100" alt="German Food">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Serving-Plate.jpg" class="d-block w-100" alt="Serving Plate">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- 🔹 Offers Section -->
+  <section id="offers" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">🔥 Special Offers</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/dum-chicken-biriyani.jpg.jpg" class="card-img-top" alt="Biryani">
+            <div class="card-body">
+              <h5 class="card-title">Family Biryani Pack</h5>
+              <p class="card-text">Get 20% OFF on Family Pack Biryani every weekend.</p>
+              <a href="#order" class="btn btn-dark">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/dhosa.webp" class="card-img-top" alt="Pizza">
+            <div class="card-body">
+              <h5 class="card-title">Dhosa Combo</h5>
+              <p class="card-text">Buy 1 Get 1 FREE on Large Dhosa (Friday Only).</p>
+              <a href="#order" class="btn btn-dark">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/dessert.png" class="card-img-top" alt="Dessert">
+            <div class="card-body">
+              <h5 class="card-title">Sweet Treats</h5>
+              <p class="card-text">Free Dessert on all orders above ₹999.</p>
+              <a href="#order" class="btn btn-dark">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Order Form -->
+  <section id="order" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">📝 Place Your Order</h2>
+      <form class="row g-3 shadow p-4 bg-light rounded">
+        <div class="col-md-6">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" placeholder="Enter your name">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Phone Number</label>
+          <input type="text" class="form-control" placeholder="Enter your phone">
+        </div>
+        <div class="col-md-12">
+          <label class="form-label">Select Item</label>
+          <select class="form-select">
+            <option>Biryani</option>
+            <option>Dhosa</option>
+            <option>Chicken gravy</option>
+            <option>Dessert</option>
+          </select>
+        </div>
+        <div class="col-md-12">
+          <label class="form-label">Address</label>
+          <textarea class="form-control" rows="3" placeholder="Enter your address"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-dark btn-lg">Submit Order</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🔹 Contact Section -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">📞 Contact Us</h2>
+      <p>Email: rojarestaurant@gmail.com | Phone: +91 12345 67890</p>
+      <p>Address: 123 Main Street, Salem, Tamil Nadu</p>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Roja Restaurant | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
